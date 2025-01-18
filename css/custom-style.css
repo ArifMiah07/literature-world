@@ -1,0 +1,102 @@
+.literature-world-background-container {
+    background-image: url('../assets/images/cover01.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .literature-world-gradient-h1 {
+    font-size: 72px;
+    background: linear-gradient(to right,#04ee23, #ffdd00, #fbb034, #c1b1ff, #6a00ff, #fb3434);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin: 0;
+  }
+.poetry-bg-img {
+    background-image: url('../assets/images/poetry04.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .poetry-bg-img-h1 {
+    font-size: 32px;
+    background: linear-gradient(to right,#04ee23, #c1b1ff, #6a00ff, #fb3434);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin: 0;
+  }
+.novel-bg-img {
+    background-image: url('../assets/images/02.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .novel-bg-img-h1 {
+    font-size: 32px;
+    background: linear-gradient(to right,#04ee23, #c1b1ff, #6a00ff, #fb3434);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin: 0;
+  }
+.stories-bg-img {
+    background-image: url('../assets/images/03.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .stories-bg-img-h1 {
+    font-size: 32px;
+    background: linear-gradient(to right,#04ee23, #c1b1ff, #6a00ff, #fb3434);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin: 0;
+  }
+
+  .icon{
+    filter:  brightness(100) invert(1);
+  }
+
+
+  @media screen and (max-width: 350px) {
+    .literature-world-gradient-h1{
+        font-size: 32px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .literature-world-gradient-h1{
+        font-size: 52px;
+    }
+  }
+ 
