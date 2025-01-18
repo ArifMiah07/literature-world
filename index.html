@@ -1,90 +1,368 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Our Literature World</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/custom-style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://kit.fontawesome.com/cc62a1edbf.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.icons8.com/fonts/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
-<body>
-	<div class="main">
-		<div class="jogot" align="center">
-			Our Literature World
-		</div>
-		<div class="content">
-			<nav class="nav">
-				<ul class="ul">
-					<li class="li"><a href="home" class="a">Home</a></li>
-					<li class="li"><a href="home" class="a">Exlpore</a></li>
-					<li class="li"><a href="home" class="a">Store</a></li>
-					<li class="li"><a href="home" class="a">World Litarature</a></li>
-					<li class="li"><a href="home" class="a">Forum</a></li>
-				</ul>
+
+<body class="mx-auto max-w-6xl h-full ">
+	<header class="bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col mx-auto max-w-6xl  h-full">
+		<section class="w-full p-3 literature-world-background-container">
+			<h1 class="sm:text-2xl md:text-3xl lg:text-5xl text-center font-medium literature-world-gradient-h1 ">
+				Literature World</h1>
+		</section>
+		<nav class="bg-gradient-to-r from-sky-500 to-indigo-500">
+			<div class="bg-gradient-to-r from-cyan-500 to-blue-500 navbar bg-base-100">
+				<div class="navbar-start">
+					<div class="dropdown">
+						<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+								stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16" />
+							</svg>
+						</div>
+						<ul tabindex="0"
+							class="bg-black menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+							<li><a class="text-white">Home</a></li>
+							<li><a class="text-white">Explore</a></li>
+							<li><a class="text-white">World Literature</a></li>
+							<li><a class="text-white">Forum</a></li>
+						</ul>
+					</div>
+					<div class="flex items-center">
+						<div class="flex flex-row bg-white ">
+							<input type="text" placeholder="Type here"
+								class="input input-bordered w-full max-w-xs hover:outline-none bg-white " />
+							<button class="btn bg-white">search</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="navbar-center hidden lg:flex">
+					<ul class="menu menu-horizontal px-1  text-white">
+						<li><a>Home</a></li>
+						<li><a>Explore</a></li>
+						<li><a>World Literature</a></li>
+						<li><a>Forum</a></li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<a class="btn">Store</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="mx-auto max-w-6xl h-full">
+		<section class="w-full">
+			<nav class="w-full bg-green-500">
+				<div class="w-full bg-green-600 p-0 navbar-center ">
+					<ul class="menu menu-horizontal py-0 px-1 text-white">
+						<li><a> <i class="fa-solid fa-book"></i>Books</a></li>
+						<li><a><i class="fa-brands fa-pagelines"></i>Novels</a></li>
+						<li><a><img src="./assets/icons/poetry-icon.png" class="w-4 icon " alt="">Poetry</a></li>
+						<li><a><img src="./assets/icons/story-icon.png" class="w-4 icon " alt="">Stories</a></li>
+					</ul>
+				</div>
 			</nav>
-			<div class="book">
-				Book
+		</section>
+		<section class="overview bg-gray-100 py-16">
+			<div class="container mx-auto px-4 text-center">
+				<h2 class="text-4xl font-bold text-gray-800 mb-6">Welcome to Literature World</h2>
+				<p class="text-lg text-gray-600 mb-8">
+					Welcome to Literature World, where words come alive and stories weave a tapestry of human
+					experience. Whether you’re
+					a lifelong bookworm or someone just discovering the magic of a good poem, we’ve got something for
+					you. Here, literature
+					isn’t just ink on pages – it’s a journey through time, cultures, and emotions that transcend
+					boundaries.
+				</p>
+				<p class="text-lg text-gray-600 mb-8">
+					From the timeless beauty of poetry to the gripping depth of novels, we bring you a collection of
+					literary treasures.
+					Explore iconic works, rediscover the classics, and discover hidden gems that might just change the
+					way you see the world.
+				</p>
+				<p class="text-lg text-gray-600 mb-8">
+					At Literature World, we’re all about celebrating the stories that connect us. Whether it’s the raw
+					emotion in Sylvia
+					Plath’s words, the timeless themes in Homer’s epics, or the profound simplicity in Rumi’s verses,
+					you’ll find something
+					here that speaks to you. And if you haven’t found it yet, keep searching – because every book, every
+					poem, is waiting
+					to share its truth with you.
+				</p>
+				<p class="text-lg text-gray-600 mb-8">
+					This is more than just a website – it’s a community. A place for readers, writers, and dreamers to
+					connect, share,
+					and grow. So dive into our curated collections, indulge in thought-provoking content, and discover
+					your next literary
+					obsession.
+				</p>
+				<a href="#explore"
+					class="bg-green-500 text-white px-6 py-3 rounded-full text-lg hover:bg-green-600 transition duration-300">
+					Start Your Journey
+				</a>
+			</div>
+		</section>
+
+		<section>
+			<div class="main py-8">
+				<div class="container mx-auto -4">
+					<!-- Poem Card -->
+					<div class="w-full h-full card bg-[#F3F4F6] shadow-lg  overflow-hidden mb-8">
+						<div class="w-full h-full flex flex-col items-center">
+							<!-- <img src="./assets/images/poetry-img.png" alt="Poetry Image" class="w-full h-48 object-cover"> -->
+							<div class="w-full h-full p-3 flex flex-row items-center justify-center "> <img
+									src="./assets/icons/novel-icon-img02.png" class="w-10 h-10" alt=""> <span
+									class="text-3xl font-semibold text-gray-800 ">Poem</span></div>
+						</div>
+						<div class="p-6 poetry-bg-img w-full h-[500px] flex flex-col items-center ">
+							<ul
+								class="space-y-2 overflow-scroll w-full h-[4950px] flex flex-col items-center justify-center text-center">
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Best
+										Poetry Books and Poems (According to The Write Life)</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Leaves
+										of Grass by Walt Whitman</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">And
+										Still I Rise by Maya Angelou</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Iliad and The Odyssey by Homer</a></li>
+								<li><a href="#"
+										class=" text-[19px] font-medium text-green-900 hover:text-white">Selected Poems
+										by John Keats</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Divine
+										Comedy by Dante Alighieri</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Waste Land by T.S. Eliot</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Collected Poems by Sylvia Plath</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Love Poems of Rumi by Rumi</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Raven by Edgar Allan Poe</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Best
+										Poetry Books and Poems (According to The Write Life)</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Leaves
+										of Grass by Walt Whitman</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">And
+										Still I Rise by Maya Angelou</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Iliad and The Odyssey by Homer</a></li>
+								<li><a href="#"
+										class=" text-[19px] font-medium text-green-900 hover:text-white">Selected Poems
+										by John Keats</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Divine
+										Comedy by Dante Alighieri</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Waste Land by T.S. Eliot</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Collected Poems by Sylvia Plath</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Love Poems of Rumi by Rumi</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Raven by Edgar Allan Poe</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Best
+										Poetry Books and Poems (According to The Write Life)</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Leaves
+										of Grass by Walt Whitman</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">And
+										Still I Rise by Maya Angelou</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Iliad and The Odyssey by Homer</a></li>
+								<li><a href="#"
+										class=" text-[19px] font-medium text-green-900 hover:text-white">Selected Poems
+										by John Keats</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Divine
+										Comedy by Dante Alighieri</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Waste Land by T.S. Eliot</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Collected Poems by Sylvia Plath</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Love Poems of Rumi by Rumi</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Raven by Edgar Allan Poe</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Best
+										Poetry Books and Poems (According to The Write Life)</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Leaves
+										of Grass by Walt Whitman</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">And
+										Still I Rise by Maya Angelou</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Iliad and The Odyssey by Homer</a></li>
+								<li><a href="#"
+										class=" text-[19px] font-medium text-green-900 hover:text-white">Selected Poems
+										by John Keats</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">Divine
+										Comedy by Dante Alighieri</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Waste Land by T.S. Eliot</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Collected Poems by Sylvia Plath</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Love Poems of Rumi by Rumi</a></li>
+								<li><a href="#" class=" text-[19px] font-medium text-green-900 hover:text-white">The
+										Raven by Edgar Allan Poe</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Story Card -->
+					<div class="card bg-[#F3F4F6] shadow-lg rounded-lg overflow-hidden mb-8">
+						<div class=" w-full h-full flex flex-col items-center">
+							<!-- <img src="./assets/images/poetry-img.png" alt="Poetry Image" class="w-full h-48 object-cover"> -->
+							<div class="w-full h-full p-3 flex flex-row items-center justify-center "> <img
+									src="./assets/icons/novel-icon-img02.png" class="w-10 h-10" alt=""> <span
+									class="text-3xl font-semibold text-gray-800 ">Stories</span></div>
+						</div>
+						<div class="p-6 stories-bg-img  w-full h-[500px] flex flex-col items-center">
+							<ul
+								class="space-y-2 overflow-scroll w-full h-[4950px] flex flex-col items-center justify-center text-center">
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">Best Poetry Books and Poems
+										(According to The Write Life)</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">Leaves of Grass by Walt
+										Whitman</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">And Still I Rise by Maya
+										Angelou</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Iliad and The Odyssey by
+										Homer</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">Selected Poems by John
+										Keats</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">Divine Comedy by Dante
+										Alighieri</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Waste Land by T.S.
+										Eliot</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Collected Poems by Sylvia
+										Plath</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Love Poems of Rumi by
+										Rumi</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Raven by Edgar Allan
+										Poe</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Novel Card -->
+					<div class="card bg-[#F3F4F6] shadow-lg rounded-lg overflow-hidden">
+						<!-- <img src="path/to/your/image.jpg" alt="Novel Image" class="w-full h-48 object-cover"> -->
+
+						<div class="w-full h-full flex flex-col items-center">
+							<!-- <img src="./assets/images/poetry-img.png" alt="Poetry Image" class="w-full h-48 object-cover"> -->
+							<div class="w-full h-full p-3 flex flex-row items-center justify-center "> <img
+									src="./assets/icons/novel-icon-img02.png" class="w-10 h-10" alt=""> <span
+									class="text-3xl font-semibold text-gray-800 ">Novel</span></div>
+						</div>
+						<div class="p-6 novel-bg-img  w-full h-[500px] flex flex-col items-center">
+							<ul
+								class="space-y-2 overflow-scroll w-full h-[4950px] flex flex-col items-center justify-center text-center">
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">Best Poetry Books and Poems
+										(According to The Write Life)</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">Leaves of Grass by Walt
+										Whitman</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">And Still I Rise by Maya
+										Angelou</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Iliad and The Odyssey by
+										Homer</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">Selected Poems by John
+										Keats</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">Divine Comedy by Dante
+										Alighieri</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Waste Land by T.S.
+										Eliot</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Collected Poems by Sylvia
+										Plath</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Love Poems of Rumi by
+										Rumi</a></li>
+								<li><a href="#" class="text-[19px] font-medium text-green-900 hover:text-white">The Raven by Edgar Allan
+										Poe</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</main>
+	<!-- Footer -->
+	<!-- Footer -->
+	<footer class="bg-gray-50 text-gray-800 py-10">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+				<!-- About Section -->
+				<div class="space-y-4">
+					<h3 class="text-xl font-semibold">About Literature World</h3>
+					<p class="text-gray-600 text-sm">
+						Literature World is your gateway to the most captivating poems, novels, and stories from around
+						the world. Join us in exploring the written word's magic.
+					</p>
+				</div>
+
+				<!-- Quick Links Section -->
+				<div class="space-y-4">
+					<h3 class="text-xl font-semibold">Quick Links</h3>
+					<ul class="space-y-2 text-gray-600 text-sm">
+						<li><a href="#" class="hover:text-green-500">Home</a></li>
+						<li><a href="#" class="hover:text-green-500">Poetry</a></li>
+						<li><a href="#" class="hover:text-green-500">Novels</a></li>
+						<li><a href="#" class="hover:text-green-500">Stories</a></li>
+						<li><a href="#" class="hover:text-green-500">Blogs</a></li>
+						<li><a href="#" class="hover:text-green-500">Contact</a></li>
+					</ul>
+				</div>
+
+				<!-- Social Media Section -->
+				<div class="space-y-4">
+					<h3 class="text-xl font-semibold">Follow Us</h3>
+					<div class="flex space-x-6">
+						<a href="#" class="text-gray-600 hover:text-green-500">
+							<i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+						</a>
+						<a href="#" class="text-gray-600 hover:text-green-500">
+							<i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+						</a>
+						<a href="#" class="text-gray-600 hover:text-green-500">
+							<i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+						</a>
+						<a href="#" class="text-gray-600 hover:text-green-500">
+							<i class="fab fa-linkedin-in"></i> <!-- LinkedIn Icon -->
+						</a>
+					</div>
+				</div>
+
+				<!-- Contact Section -->
+				<div class="space-y-4">
+					<h3 class="text-xl font-semibold">Contact Us</h3>
+					<p class="text-gray-600 text-sm">
+						Email: <a href="mailto:info@literatureworld.com"
+							class="hover:text-green-500">info@literatureworld.com</a>
+					</p>
+					<p class="text-gray-600 text-sm">
+						Phone: <a href="tel:+1234567890" class="hover:text-green-500">+1 234 567 890</a>
+					</p>
+				</div>
 
 			</div>
-			<div class="content">
-				<div class="poem">
-				Poem
-					<div class="info">
-						<ul type="disc">
-							<li> <a href="">Best Poetry Books and Poems (According to The Write Life)</a> </li>
-							<li> <a href="">  Leaves of Grass by Walt Whitman</a> </li>
-							<li> <a href="">And Still I Rise by Maya Angelou</a> </li>
-							<li> <a href="">The Iliad and The Odyssey by Homer</a> </li>
-							<li> <a href="">Selected Poems by John Keats</a> </li>
-							<li> <a href="">Divine Comedy by Dante Alighieri</a> </li>
-							<li> <a href="">  The Waste Land by T.S. Eliot</a> </li>
-							<li> <a href="">The Collected Poems by Sylvia Plath</a> </li>
-							<li> <a href="">
-		    				The Love Poems of Rumi and The Essential Rumi by Rumi</a> </li>
-							<li> <a href="">The Raven and Other Poems by Edgar Allan Poe</a> </li>
-							<li> <a href="">Set Me on Fire: A Poem for Every Feeling by Ella Risbridger</a> </li>
-						</ul>
-					</div>
-			</div>
-			<div class="story">
-				Story
-					<div class="info">
-						<ul type="disc">
-							<li> <a href="">Best Poetry Books and Poems (According to The Write Life)</a> </li>
-							<li> <a href="">  Leaves of Grass by Walt Whitman</a> </li>
-							<li> <a href="">And Still I Rise by Maya Angelou</a> </li>
-							<li> <a href="">The Iliad and The Odyssey by Homer</a> </li>
-							<li> <a href="">Selected Poems by John Keats</a> </li>
-							<li> <a href="">Divine Comedy by Dante Alighieri</a> </li>
-							<li> <a href="">  The Waste Land by T.S. Eliot</a> </li>
-							<li> <a href="">The Collected Poems by Sylvia Plath</a> </li>
-							<li> <a href="">
-		    				The Love Poems of Rumi and The Essential Rumi by Rumi</a> </li>
-							<li> <a href="">The Raven and Other Poems by Edgar Allan Poe</a> </li>
-							<li> <a href="">Set Me on Fire: A Poem for Every Feeling by Ella Risbridger</a> </li>
-						</ul>
-					</div>
-				</div>
-			<div class="novel">
-				Novel
-					<div class="info">
-						<ul type="disc">
-							<li> <a href="">Best Poetry Books and Poems (According to The Write Life)</a> </li>
-							<li> <a href="">  Leaves of Grass by Walt Whitman</a> </li>
-							<li> <a href="">And Still I Rise by Maya Angelou</a> </li>
-							<li> <a href="">The Iliad and The Odyssey by Homer</a> </li>
-							<li> <a href="">Selected Poems by John Keats</a> </li>
-							<li> <a href="">Divine Comedy by Dante Alighieri</a> </li>
-							<li> <a href="">  The Waste Land by T.S. Eliot</a> </li>
-							<li> <a href="">The Collected Poems by Sylvia Plath</a> </li>
-							<li> <a href="">
-		    				The Love Poems of Rumi and The Essential Rumi by Rumi</a> </li>
-							<li> <a href="">The Raven and Other Poems by Edgar Allan Poe</a> </li>
-							<li> <a title="hello!" href="">Set Me on Fire: A Poem for Every Feeling by Ella Risbridger</a> </li>
-						</ul>
-					</div>
-				</div>
+
+			<!-- Copyright Section -->
+			<div class="mt-8 border-t border-gray-300 pt-6 text-center text-sm text-gray-600">
+				<p>&copy; 2025 Literature World. All rights reserved.</p>
 			</div>
 		</div>
-	</div>
+	</footer>
+
+
+	<script src="./js/index.js"></script>
 </body>
 </html>
