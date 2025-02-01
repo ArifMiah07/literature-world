@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-    <!-- styles and ui library -->
+    <title>Library</title>
+    <!-- Styles and UI Libraries -->
     <link rel="stylesheet" href="../css/custom-style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- icons -->
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/cc62a1edbf.js" crossorigin="anonymous"></script>
     <link href="https://cdn.icons8.com/fonts/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
     <header class="bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col mx-auto w-full h-full">
         <nav class="bg-gradient-to-r from-sky-500 to-indigo-500">
@@ -37,10 +35,10 @@
                         </ul>
                     </div>
                     <div class="flex items-center">
-                        <div class="flex flex-row bg-white ">
-                            <input type="text" placeholder="Type here"
-                                class="input input-bordered w-full max-w-xs hover:outline-none bg-white " />
-                            <button class="btn bg-white">search</button>
+                        <div class="flex flex-row bg-white">
+                            <input type="text" placeholder="Search"
+                                class="input input-bordered w-full max-w-xs hover:outline-none bg-white" />
+                            <button class="btn bg-white">Search</button>
                         </div>
                     </div>
                 </div>
@@ -58,10 +56,11 @@
             </div>
         </nav>
     </header>
+
     <main class="flex flex-col">
         <section class="w-full">
             <nav class="w-full bg-green-500">
-                <div class="w-full bg-green-600 p-0 navbar-center ">
+                <div class="w-full bg-green-600 p-0 navbar-center">
                     <ul class="menu menu-horizontal py-0 px-1 text-white">
                         <li><a href="./pages/books.html"> <i class="fa-solid fa-book"></i>Books</a></li>
 						<li><a href="./pages/novels"><i class="fa-brands fa-pagelines"></i>Novels</a></li>
@@ -72,34 +71,39 @@
                 </div>
             </nav>
         </section>
-        <section class="bg-[#F0F8FF] grid grid-cols-1 lg:grid-cols-12 w-full h-[100vh] gap-4 p-4">
-            <!-- Left Sidebar - Categories & Info -->
-            <aside class="border border-gray-300 col-span-3 p-4 bg-gray-100 rounded-lg shadow-lg">
-                <h2 class="text-lg font-semibold mb-3">Categories</h2>
-                <ul class="space-y-2">
-                    <li><a href="#" class="block hover:text-blue-500">Romantic Poetry</a></li>
-                    <li><a href="#" class="block hover:text-blue-500">Nature Poetry</a></li>
-                    <li><a href="#" class="block hover:text-blue-500">Classical Poems</a></li>
-                </ul>
-            </aside>
-            <!-- Main Content - Featured Poem -->
-            <main class="border border-gray-300 col-span-7 p-6 bg-white rounded-lg shadow-lg">
-                <h1 class="text-2xl font-bold text-gray-900 mb-4">Featured Poem</h1>
-                <p class="text-gray-700 leading-relaxed italic">
-                    "Golden rays paint the sky,<br>
-                    Whispering winds bid the night goodbye.<br>
-                    Dreams linger, refusing to die."
-                </p>
-            </main>
-            <!-- Right Sidebar - Latest Poems -->
-            <aside class="border border-gray-300 col-span-2 p-4 bg-gray-100 rounded-lg shadow-lg">
-                <h2 class="text-lg font-semibold mb-3">Latest Poems</h2>
-                <ul class="space-y-2">
-                    <li><a href="#" class="block hover:text-blue-500">The Silent Echo</a></li>
-                    <li><a href="#" class="block hover:text-blue-500">Shadows & Light</a></li>
-                    <li><a href="#" class="block hover:text-blue-500">Ocean’s Lullaby</a></li>
-                </ul>
-            </aside>
+
+        <!-- Library Contents -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+            <div class="card bg-white shadow-xl">
+                <figure><img src="../assets/images/book1.jpg" alt="Book 1" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Book Title 1</h2>
+                    <p>A brief description of the book.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-white shadow-xl">
+                <figure><img src="../assets/images/book2.jpg" alt="Book 2" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Book Title 2</h2>
+                    <p>A brief description of the book.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-white shadow-xl">
+                <figure><img src="../assets/images/book3.jpg" alt="Book 3" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Book Title 3</h2>
+                    <p>A brief description of the book.</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
